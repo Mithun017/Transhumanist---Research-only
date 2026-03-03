@@ -1,6 +1,7 @@
 # Operating System
 .DS_Store
 Thumbs.db
+Desktop.ini
 
 # Python
 __pycache__/
@@ -8,22 +9,50 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
+profile_default/
+ipython_config.py
 
 # Virtual Environments
 myenv/
 .venv/
 venv/
 env/
+ENV/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
+*/.ipynb_checkpoints/
 
-# Data - ignore large video files
-# The video files are too large to be committed to git, and are therefore ignored.
+# Data & Large Files
+# Ignore large video files, databases, and heavy datasets
 Coding/Data set/Video/*.mp4
+*.avi
+*.mkv
+*.mov
+*.mp4
+*.h5
+*.hdf5
+*.sqlite
+*.db
+
+# Machine Learning models & weights
+*.pt
+*.pth
+*.onnx
+*.pb
+*.tflite
+saved_models/
+checkpoints/
 
 # IDE/Editor specific
 .vscode/
 .idea/
 .history/
 *.bak
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
