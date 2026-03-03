@@ -1,0 +1,16 @@
+digraph {
+	A [label="Data Collection"]
+	B [label="Data Preprocessing"]
+	C [label="Model Training"]
+	D [label="Model Evaluation"]
+	E [label=Deployment]
+	F [label=Monitoring]
+	G [label="Feedback Loop"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> B [label=Feedback]
+}

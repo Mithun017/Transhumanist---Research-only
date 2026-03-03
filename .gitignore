@@ -1,0 +1,29 @@
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual Environments
+myenv/
+.venv/
+venv/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Data - ignore large video files
+# The video files are too large to be committed to git, and are therefore ignored.
+Coding/Data set/Video/*.mp4
+
+# IDE/Editor specific
+.vscode/
+.idea/
+.history/
+*.bak

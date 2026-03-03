@@ -1,0 +1,24 @@
+digraph {
+	rankdir=LR
+	System [label="Street Protection System" color=lightgrey shape=rectangle style=filled]
+	User [label=User shape=ellipse]
+	Security [label="Security Personnel" shape=ellipse]
+	Admin [label="System Admin" shape=ellipse]
+	Sensor [label="Sensor Network" shape=ellipse]
+	Monitor [label="Monitor Area" shape=ellipse]
+	Detect [label="Detect Theft" shape=ellipse]
+	Alert [label="Send Alert" shape=ellipse]
+	View [label="View Alerts" shape=ellipse]
+	Manage [label="Manage System" shape=ellipse]
+	User -> View
+	Security -> View
+	Security -> Alert
+	Admin -> Manage
+	Sensor -> Monitor
+	Sensor -> Detect
+	Monitor -> System [arrowhead=none]
+	Detect -> System [arrowhead=none]
+	Alert -> System [arrowhead=none]
+	View -> System [arrowhead=none]
+	Manage -> System [arrowhead=none]
+}
